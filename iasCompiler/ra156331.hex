@@ -1,46 +1,15 @@
-# MQ = g; MQ *= x;
 000 	09 3FF 0B 105
-
-# AC = MQ; y = AC;
 001 	0A 000 21 3FD
-
-# AC /= 2; k = AC;
 002 	15 000 21 3FC
-
-# AC = y; MQ = AC / k;
 003 	01 3FD 0C 3FC
-
-# AC = MQ; AC += K;
 004 	0A 000 05 3FC
-
-# AC /= 2; k = AC;
 005 	15 000 21 3FC
-
-# AC = i; AC -= 1;
 006 	01 3FB 06 3FA
-
-# i = AC; goto 003 if AC >= 0;
 007 	21 3FB 0F 003
-
-# AC = k; goto 400;
 008 	01 3FC 0E 400
-
-
-# Valor de x
 105 	0000000000
-
-# VARIÁVEIS
-
-# Reservado pra var i
 3FB 	0000000009
-# Reservado pra var k
 3FC 	0000000000
-# Reservado pra var y
 3FD 	0000000000
-
-# CONSTANTES
-
-# Valor de g
 3FF 	000000000A
-
 3FA 	0000000001
